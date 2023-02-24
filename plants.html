@@ -12,14 +12,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Interesting Plants</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -34,11 +34,10 @@
             </ul>
           </div>
         </div>
-      </nav>
-
-      <h1>Plants by Pavanireddy</h1>
-      <div class="container">
-         
+    </nav>
+ 
+    <h1>Plants by Pavanireddy</h1>
+<div class="container">
     <div class="row">
         <div class="col-sm-2">K</div>
         <div class="col-sm-2">A</div>
@@ -47,112 +46,171 @@
         <div class="col-sm-2">M</div>
         <div class="col-sm-2">I</div>
     </div>
-      <div class="row">
+    <div class="row">
         <div class="col-md">Kalanchoe</div>
         <div class="col-md">ABELIA</div>
         <div class="col-md">RESTIO</div>
         <div class="col-md">Umbrella plant</div>
         <div class="col-md">MACHILUS</div>
         <div class="col-md">Ice Plants</div>
+    </div>
+</div>
+<p>plants row breaks first because as we know that in bootstrap we have a grid system with 12 coloumns 
+    so the each element will take upto the 12 coloumns if the width is small it will break into rows.
+    I this case the plantname has more width as we used column medium.The width of the column-medium(>968px) is 
+    small compared to column-small(>768px) </p>
+    <div class="container">
+        <img  src="Kalanchoe-01.jpg"
+                  class="img-fluid" width="300" height="300" alt="kalanchoe plant image"/>
+        <img src="funshine_abelia_plant-02.jpg"
+                  class="img-fluid" width="300" height="300" alt="Abelia plant image"/>
+        <img src="Restio_quadratus-01.jpg" 
+                   class="img-fluid" width="300" height="300" alt="Restio plant image"/>
+    </div>
+    <div class="container">
+        <img src="Kalanchoe-01.jpg"
+                 class="img-thumbnail" width="300" height="300" alt="kalanchoe plant image"/>
+        <img src="funshine_abelia_plant-02.jpg"
+                 class="img-thumbnail" width="300" height="300" alt="kalanchoe plant image"/>
+        <img src="Restio_quadratus-01.jpg"
+               class="img-thumbnail" width="300" height="300" alt="kalanchoe plant image"/>              
+    </div>  
+    <table class="table table-striped table-bordered table-hover caption-top table-sm">
+        <caption style="text-align:center; font: size 18px; color:black;"><b>List of Plants Mountains and Lakes</b></caption>
+    <thead>
+        <tr class="table-success">
+            <th>Letter</th>
+            <th>Plant</th>
+            <th>Mountain</th>
+            <th>Lake</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-dark">
+            <td>K</td>
+            <td>Kalanchoe</td>
+            <td>kamakau</td>
+            <td>Kamafusa</td>
+        </tr>
+        <tr class="table-danger">
+            <td>A</td>
+            <td>ABELIA</td>
+            <td>Anaimudi</td>
+            <td>Aubry</td>
+        </tr>
+        <tr class="table-muted">
+            <td>R</td>
+            <td>RESTIO</td>
+            <td>Ranger peak</td>
+            <td>Rainy</td>
+        </tr>
+        <tr class="table-warning">
+            <td>U</td>
+            <td>Umbrella plant</td>
+            <td>Ultar</td>
+            <td>Ubinskoe</td>
+        </tr>
+        <tr class="table-primary">
+            <td>M</td>
+            <td>MACHILUS</td>
+            <td>Moldoveanu peak</td>
+            <td>Malawi</td>
+        </tr>
+        <tr class="table-secondary">
+            <td>I</td>
+            <td>Ice Plants</td>
+            <td>Ishpatina ridge</td>
+            <td>Ibera</td>
+        </tr>
+    </tbody>         
+    </table>
+    <div class="btn-toolbar">
+        <div>
+        <button type="button" class="btn btn-success">K</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">R</button>
+        </div>
+        <div>
+        <button type="button" class="btn btn-warning">U</button>
+        <button type="button" class="btn btn-warning">M</button>
+        </div>
+        <div>
+        <button type="button" class="btn btn-danger">I</button>
+    </div>
+    </div>
+    <br>
+    <div class=" btn-toolbar">
+        <div class="btn-group">
+            <a href="Kalanchoe-01.jpg" class="btn btn-success mr-1" aria-current="page">K</a>
+            <a href="funshine_abelia_plant-02.jpg" class="btn btn-success mr-1">A</a>
+            <a href="Restio_quadratus-01.jpg" class="btn btn-success mr-1">R</a>
+        </div>
+        <div class="btn-group">
+            <a href="umbrella plant.jpg" class="btn btn-warning mr-1" aria-current="page">U</a>
+            <a href="machilus.jpg" class="btn btn-warning mr-1">Machilus</a>
+        </div>
+        <div class="btn-group">
+            <a href="iceplants.jpg" class="btn btn-danger mr-1">Ice Plants</a>
+        </div>
+    </div><br>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plants button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="basic.html">basic html</a>
+          <a class="dropdown-item" href="advanced.html">another html</a>
+        </div>
+    </div>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" placeholder="Enter your email id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Plant</label>
+          <input type="password" placeholder="Enter your plant name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox"  class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="card" style="width: 18rem;">
+        <img src="Kalanchoe-01.jpg" class="card-img-top" alt="kalanchoe">
+        <div class="card-body">
+          <h5 class="card-title">kalanchoe</h5>
+          <p class="card-text">Kalanchoe also written Kalanchöe or Kalanchoë, is a genus of about 125 species of tropical,
+                                succulent plants in the stonecrop family Crassulaceae, mainly native to Madagascar and tropical Africa. </p>
+          <a href="https://en.wikipedia.org/wiki/Kalanchoe" class="btn btn-primary">Kalanchoe</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="funshine_abelia_plant-02.jpg" class="card-img-top" alt="ABELIA">
+        <div class="card-body">
+          <h5 class="card-title">funshine_abelia_plant</h5>
+          <p class="card-text">Species formerly placed in Abelia are shrubs from 1–6 m tall, native to eastern Asia 
+                               (Japan west to the Himalaya) and southern North America (Mexico); 
+                                </p>
+          <a href="https://en.wikipedia.org/wiki/Abelia" class="btn btn-primary">Abelia</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Restio_quadratus-01.jpg" class="card-img-top" alt="Nepeta">
+        <div class="card-body">
+          <h5 class="card-title">Restio</h5>
+          <p class="card-text">Restio is a genus of flowering plants within the family Restionaceae, 
+                           described in 1772.[5][3] The entire genus is endemic to South Africa (Cape Province and KwaZulu-Natal).[4]
+                    </p>
+          <a href="https://en.wikipedia.org/wiki/Restio" class="btn btn-primary">Restio</a>
+        </div>
       </div>
     </div>
-    <p>plants row breaks first because as we know that in bootstrap we have a grid system with 12 coloumns 
-        so the each element will take upto the 12 coloumns if the width is small it will break into rows.
-        I this case the plantname has more width as we used column medium.The width of the column-medium(>968px) is 
-        small compared to column-small(>768px) </p>
-<div>
-    <div  >
-        <img src="https://images.immediate.co.uk/production/volatile/sites/10/2018/08/2048x1365-Plant-family-series-Crassulaceae-LI2903364-5acfb33.jpg"
-                  class="img-thumbnail" width="400" height="500" alt="kalanchoe plant image"/>
-        <img src="https://www.gardendesign.com/pictures/images/320x240Exact_0x48/site_3/sunny-anniversary-abelia-flowering-shrub-proven-winners_14165.jpg"
-                  class="img-thumbnail" width="400" height="500" alt="Abelia plant image"/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Restio_quadratus.jpg" 
-                   class="img-thumbnail" width="400" height="500" alt="Restio plant image"/>
-    </div>
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ThcAGFGyU_fCAAvMBkkkm8YtIEQuIzIRMQ&usqp=CAU"
-                 class="img-thumbnail" width="400" height="500" alt="kalanchoe plant image"/>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRsGoP5bz5LtAlBHeRlWGXGqqWCrkBH2Y_Rw&usqp=CAU"
-                 class="img-thumbnail" width="400" height="500" alt="kalanchoe plant image"/>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2H-OmHQW7MIFu6lWuGbp3CcBYTx_vPLpaw&usqp=CAU"
-               class="img-thumbnail" width="400" height="500" alt="kalanchoe plant image"/>
-                  
-                  
-    </div>
-</div>
-<table class="table table-striped table-bordered table-hover caption-top table-sm">
-   <caption>List of Plants Mountains and Lakes</caption>
-   <thead>
-    <tr class="table-success">
-        <th>Letter</th>
-        <th>Plant</th>
-        <th>Mountain</th>
-        <th>Lake</th>
-    </tr>
-</thead>
-<tbody>
-    <tr class="table-dark">
-        <td>K</td>
-        <td>Kalanchoe</td>
-        <td>kamakau</td>
-        <td>Kamafusa</td>
-    </tr>
-    <tr class="table-danger">
-        <td>A</td>
-        <td>ABELIA</td>
-        <td>Anaimudi</td>
-        <td>Aubry</td>
-    </tr>
-    <tr class="table-muted">
-        <td>R</td>
-        <td>RESTIO</td>
-        <td>Ranger peak</td>
-        <td>Rainy</td>
-    </tr>
-    <tr class="table-warning">
-        <td>U</td>
-        <td>Umbrella plant</td>
-        <td>Ultar</td>
-        <td>Ubinskoe</td>
-    </tr>
-    <tr class="table-primary">
-        <td>M</td>
-        <td>MACHILUS</td>
-        <td>Moldoveanu peak</td>
-        <td>Malawi</td>
-    </tr>
-    <tr class="table-secondary">
-        <td>I</td>
-        <td>Ice Plants</td>
-        <td>Ishpatina ridge</td>
-        <td>Ibera</td>
-    </tr>
-</tbody>        
-</table>
-</div>
-<div class="btn-toolbar">
-    <div>
-    <button type="button" class="btn btn-success">K</button>
-    <button type="button" class="btn btn-success">A</button>
-    <button type="button" class="btn btn-success">R</button>
-    </div>
-    <div>
-    <button type="button" class="btn btn-warning">U</button>
-    <button type="button" class="btn btn-warning">M</button>
-    </div>
-    <div>
-    <button type="button" class="btn btn-danger">I</button>
-</div>
-</div><br>
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Plants button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="basic.html">basic html</a>
-      <a class="dropdown-item" href="advanced.html">another html</a>
-    </div>
-  </div>
-</div>
+      
+
 </body>
 </html>
